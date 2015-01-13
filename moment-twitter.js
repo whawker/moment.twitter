@@ -13,19 +13,19 @@
 
   formats = {
     seconds: {
-      short: 's',
+      short: 's ago',
       long: ' sec'
     },
     minutes: {
-      short: 'm',
+      short: 'm ago',
       long: ' min'
     },
     hours: {
-      short: 'h',
+      short: 'h ago',
       long: ' hr'
     },
     days: {
-      short: 'd',
+      short: 'd ago',
       long: ' day'
     }
   };
@@ -50,7 +50,7 @@
         if (diff < week) {
           unit = 'days';
         } else {
-          return this.format('M/D/YY');
+          return this.format('D/M/YY');
         }
       } else {
         return this.format('MMM D');
